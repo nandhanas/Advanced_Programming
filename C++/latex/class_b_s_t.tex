@@ -1,0 +1,335 @@
+\hypertarget{class_b_s_t}{}\section{B\+ST$<$ key\+\_\+type, value\+\_\+type $>$ Class Template Reference}
+\label{class_b_s_t}\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+
+
+{\ttfamily \#include $<$B\+S\+T.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_b_s_t_1_1_const_iterator}{Const\+Iterator}}
+\item 
+class \mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_s_t_a7ec0e6b1d7f8cb8bbe036fd04fba06b3}{B\+ST}} ()=default
+\item 
+\mbox{\hyperlink{class_b_s_t_a2a4be89c2803166ad2bf6cb664684215}{B\+ST}} (const pair$<$ key\+\_\+type, value\+\_\+type $>$ \&p)
+\item 
+\mbox{\hyperlink{class_b_s_t_a1d7634883dab07eca63a324af612882c}{B\+ST}} (\mbox{\hyperlink{class_b_s_t}{B\+ST}} \&b)
+\item 
+\mbox{\hyperlink{class_b_s_t_af7174f9dd424af29c720587f4f3ff29b}{B\+ST}} (\mbox{\hyperlink{class_b_s_t}{B\+ST}} \&\&b) noexcept
+\item 
+\mbox{\hyperlink{class_b_s_t}{B\+ST}} \& \mbox{\hyperlink{class_b_s_t_a649df72e94b04a35975b0b3620777208}{operator=}} (const \mbox{\hyperlink{class_b_s_t}{B\+ST}} \&b)
+\item 
+\mbox{\hyperlink{class_b_s_t}{B\+ST}} \& \mbox{\hyperlink{class_b_s_t_aae5f751e3119d766ae7a8fc0781e68ba}{operator=}} (\mbox{\hyperlink{class_b_s_t}{B\+ST}} \&\&b) noexcept
+\item 
+\mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \mbox{\hyperlink{class_b_s_t_a1fa2e4ede1440f8c82a13cf650f5dea4}{begin}} ()
+\item 
+\mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \mbox{\hyperlink{class_b_s_t_a758f78a965cb2816f0502ff78b2fb542}{end}} ()
+\item 
+\mbox{\hyperlink{class_b_s_t_1_1_const_iterator}{Const\+Iterator}} \mbox{\hyperlink{class_b_s_t_a3c7bda7273cac1f486cc24c5d1198f38}{begin}} () const
+\item 
+\mbox{\hyperlink{class_b_s_t_1_1_const_iterator}{Const\+Iterator}} \mbox{\hyperlink{class_b_s_t_aacdfe4d003000ce143b43487fd509d61}{end}} () const
+\item 
+void \mbox{\hyperlink{class_b_s_t_a9d5f71106c279bd2f8effd06fa386667}{insert\+Node}} (const pair$<$ key\+\_\+type, value\+\_\+type $>$ \&p)
+\item 
+void \mbox{\hyperlink{class_b_s_t_a02200955e26dac5a2da745f7f9b73d0d}{clear\+Tree}} (unique\+\_\+ptr$<$ Node $>$ \&root)
+\item 
+void \mbox{\hyperlink{class_b_s_t_af8ffbeddf32425dba94b9ea1bc4b3ee7}{balance\+Tree}} ()
+\item 
+\mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \mbox{\hyperlink{class_b_s_t_afba6a6e105b99505add378003d233ad4}{find\+Node}} (const key\+\_\+type \&key) const
+\item 
+void \mbox{\hyperlink{class_b_s_t_a6891f10d9512637607be3783bc55ce2f}{print\+Tree}} ()
+\item 
+int \mbox{\hyperlink{class_b_s_t_ac4a87a73b520f99529c4a891d5c2d083}{height}} (const unique\+\_\+ptr$<$ Node $>$ \&root)
+\item 
+value\+\_\+type \& \mbox{\hyperlink{class_b_s_t_aa6d8849086bdfbf2592e017f3b107dd6}{operator\mbox{[}$\,$\mbox{]}}} (const key\+\_\+type \&key)
+\item 
+const value\+\_\+type \& \mbox{\hyperlink{class_b_s_t_a21c632ae47e4bf5e54b6d5155fd91d2e}{operator\mbox{[}$\,$\mbox{]}}} (const key\+\_\+type \&key) const
+\item 
+void \mbox{\hyperlink{class_b_s_t_a1d22aaed97163f0f352f6d844c48a813}{performance\+\_\+\+B\+ST}} (vector$<$ key\+\_\+type $>$ \&values)
+\item 
+void \mbox{\hyperlink{class_b_s_t_a24d4502a47d3eb6d3ad9a93c7106afb1}{lookup\+\_\+time\+\_\+\+B\+ST}} (vector$<$ key\+\_\+type $>$ \&values, ofstream \&file)
+\item 
+\mbox{\hyperlink{class_b_s_t_aff56473bdcfa7353c0a75415b297e0f2}{$\sim$\+B\+ST}} () noexcept=default
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unique\+\_\+ptr$<$ Node $>$ \mbox{\hyperlink{class_b_s_t_a4e8687535054becc0b625a3ef89c3bd2}{head}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_b_s_t_a7785dba8dbfc8ef5e5f8f36bdd19fe58}{operator$<$$<$}} (ostream \&out, \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$ \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename key\+\_\+type, typename value\+\_\+type$>$\newline
+class B\+S\+T$<$ key\+\_\+type, value\+\_\+type $>$}
+
+Templated class of a Binary Search tree 
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+type} & template for a key of the \mbox{\hyperlink{class_b_s_t}{B\+ST}} node \\
+\hline
+{\em value\+\_\+type} & template for a value of the \mbox{\hyperlink{class_b_s_t}{B\+ST}} node \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_s_t_a7ec0e6b1d7f8cb8bbe036fd04fba06b3}\label{class_b_s_t_a7ec0e6b1d7f8cb8bbe036fd04fba06b3}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!BST@{BST}}
+\index{BST@{BST}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{BST()}{BST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::\mbox{\hyperlink{class_b_s_t}{B\+ST}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor of the \mbox{\hyperlink{class_b_s_t}{B\+ST}} \mbox{\Hypertarget{class_b_s_t_a2a4be89c2803166ad2bf6cb664684215}\label{class_b_s_t_a2a4be89c2803166ad2bf6cb664684215}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!BST@{BST}}
+\index{BST@{BST}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{BST()}{BST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::\mbox{\hyperlink{class_b_s_t}{B\+ST}} (\begin{DoxyParamCaption}\item[{const pair$<$ key\+\_\+type, value\+\_\+type $>$ \&}]{p }\end{DoxyParamCaption})}
+
+Constructor to assign a head to a \mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+\begin{DoxyParams}{Parameters}
+{\em p} & a data pair of a node ie to be inserted in a \mbox{\hyperlink{class_b_s_t}{B\+ST}} as head \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_a1d7634883dab07eca63a324af612882c}\label{class_b_s_t_a1d7634883dab07eca63a324af612882c}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!BST@{BST}}
+\index{BST@{BST}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{BST()}{BST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::\mbox{\hyperlink{class_b_s_t}{B\+ST}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$ \&}]{b }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em b} & an already existing \mbox{\hyperlink{class_b_s_t}{B\+ST}} to be assigned to a given tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_af7174f9dd424af29c720587f4f3ff29b}\label{class_b_s_t_af7174f9dd424af29c720587f4f3ff29b}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!BST@{BST}}
+\index{BST@{BST}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{BST()}{BST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::\mbox{\hyperlink{class_b_s_t}{B\+ST}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$ \&\&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Move constructor 
+\begin{DoxyParams}{Parameters}
+{\em b} & an already existing \mbox{\hyperlink{class_b_s_t}{B\+ST}} to be moved to a given tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_aff56473bdcfa7353c0a75415b297e0f2}\label{class_b_s_t_aff56473bdcfa7353c0a75415b297e0f2}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!````~BST@{$\sim$BST}}
+\index{````~BST@{$\sim$BST}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{$\sim$BST()}{~BST()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::$\sim$\mbox{\hyperlink{class_b_s_t}{B\+ST}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Default destructor of the \mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_s_t_af8ffbeddf32425dba94b9ea1bc4b3ee7}\label{class_b_s_t_af8ffbeddf32425dba94b9ea1bc4b3ee7}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!balanceTree@{balanceTree}}
+\index{balanceTree@{balanceTree}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{balanceTree()}{balanceTree()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::balance\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function to build a balanced \mbox{\hyperlink{class_b_s_t}{B\+ST}} node \mbox{\Hypertarget{class_b_s_t_a1fa2e4ede1440f8c82a13cf650f5dea4}\label{class_b_s_t_a1fa2e4ede1440f8c82a13cf650f5dea4}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!begin@{begin}}
+\index{begin@{begin}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::\mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function to find the begining ie head of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} \mbox{\Hypertarget{class_b_s_t_a3c7bda7273cac1f486cc24c5d1198f38}\label{class_b_s_t_a3c7bda7273cac1f486cc24c5d1198f38}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!begin@{begin}}
+\index{begin@{begin}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::\mbox{\hyperlink{class_b_s_t_1_1_const_iterator}{Const\+Iterator}} \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+a const function to find the begining ie head of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} \mbox{\Hypertarget{class_b_s_t_a02200955e26dac5a2da745f7f9b73d0d}\label{class_b_s_t_a02200955e26dac5a2da745f7f9b73d0d}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!clearTree@{clearTree}}
+\index{clearTree@{clearTree}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{clearTree()}{clearTree()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::clear\+Tree (\begin{DoxyParamCaption}\item[{unique\+\_\+ptr$<$ Node $>$ \&}]{root }\end{DoxyParamCaption})}
+
+a recursive function to delete a \mbox{\hyperlink{class_b_s_t}{B\+ST}} node 
+\begin{DoxyParams}{Parameters}
+{\em root} & the head of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_a758f78a965cb2816f0502ff78b2fb542}\label{class_b_s_t_a758f78a965cb2816f0502ff78b2fb542}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!end@{end}}
+\index{end@{end}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::\mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function to find the end ie nullptr of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} \mbox{\Hypertarget{class_b_s_t_aacdfe4d003000ce143b43487fd509d61}\label{class_b_s_t_aacdfe4d003000ce143b43487fd509d61}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!end@{end}}
+\index{end@{end}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::\mbox{\hyperlink{class_b_s_t_1_1_const_iterator}{Const\+Iterator}} \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+a const function to find the end ie nullptr of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} \mbox{\Hypertarget{class_b_s_t_afba6a6e105b99505add378003d233ad4}\label{class_b_s_t_afba6a6e105b99505add378003d233ad4}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!findNode@{findNode}}
+\index{findNode@{findNode}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{findNode()}{findNode()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::\mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::find\+Node (\begin{DoxyParamCaption}\item[{const key\+\_\+type \&}]{key }\end{DoxyParamCaption}) const}
+
+a const function to search a node in the \mbox{\hyperlink{class_b_s_t}{B\+ST}} node 
+\begin{DoxyParams}{Parameters}
+{\em key} & key of a node in a \mbox{\hyperlink{class_b_s_t}{B\+ST}} ie to be found \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_ac4a87a73b520f99529c4a891d5c2d083}\label{class_b_s_t_ac4a87a73b520f99529c4a891d5c2d083}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!height@{height}}
+\index{height@{height}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+int \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::height (\begin{DoxyParamCaption}\item[{const unique\+\_\+ptr$<$ Node $>$ \&}]{root }\end{DoxyParamCaption})}
+
+a function to find the height of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} node 
+\begin{DoxyParams}{Parameters}
+{\em root} & the head of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_a9d5f71106c279bd2f8effd06fa386667}\label{class_b_s_t_a9d5f71106c279bd2f8effd06fa386667}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!insertNode@{insertNode}}
+\index{insertNode@{insertNode}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{insertNode()}{insertNode()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::insert\+Node (\begin{DoxyParamCaption}\item[{const pair$<$ key\+\_\+type, value\+\_\+type $>$ \&}]{p }\end{DoxyParamCaption})}
+
+a function to insert/replace a node into the \mbox{\hyperlink{class_b_s_t}{B\+ST}} node 
+\begin{DoxyParams}{Parameters}
+{\em p} & a data pair of a node in a \mbox{\hyperlink{class_b_s_t}{B\+ST}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_a24d4502a47d3eb6d3ad9a93c7106afb1}\label{class_b_s_t_a24d4502a47d3eb6d3ad9a93c7106afb1}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!lookup\_time\_BST@{lookup\_time\_BST}}
+\index{lookup\_time\_BST@{lookup\_time\_BST}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{lookup\_time\_BST()}{lookup\_time\_BST()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::lookup\+\_\+time\+\_\+\+B\+ST (\begin{DoxyParamCaption}\item[{vector$<$ key\+\_\+type $>$ \&}]{values,  }\item[{ofstream \&}]{file }\end{DoxyParamCaption})}
+
+a function to estimate the time taken to find a node of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+\begin{DoxyParams}{Parameters}
+{\em values} & a vector of key random values that need to searched \\
+\hline
+{\em file} & an ofstream variable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_a649df72e94b04a35975b0b3620777208}\label{class_b_s_t_a649df72e94b04a35975b0b3620777208}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$ \& \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$ \&}]{b }\end{DoxyParamCaption})}
+
+Copy assignment 
+\begin{DoxyParams}{Parameters}
+{\em b} & an already existing \mbox{\hyperlink{class_b_s_t}{B\+ST}} to be assigned to a given tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_aae5f751e3119d766ae7a8fc0781e68ba}\label{class_b_s_t_aae5f751e3119d766ae7a8fc0781e68ba}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$ \& \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$ \&\&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Move assignment 
+\begin{DoxyParams}{Parameters}
+{\em b} & an already existing \mbox{\hyperlink{class_b_s_t}{B\+ST}} to be moved to a given tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_aa6d8849086bdfbf2592e017f3b107dd6}\label{class_b_s_t_aa6d8849086bdfbf2592e017f3b107dd6}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+value\+\_\+type \& \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const key\+\_\+type \&}]{key }\end{DoxyParamCaption})}
+
+an overload function to the operator \mbox{[}\mbox{]} to find the value of a given key in a \mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+\begin{DoxyParams}{Parameters}
+{\em key} & the key whose associated value to be found \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_a21c632ae47e4bf5e54b6d5155fd91d2e}\label{class_b_s_t_a21c632ae47e4bf5e54b6d5155fd91d2e}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+const value\+\_\+type \& \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const key\+\_\+type \&}]{key }\end{DoxyParamCaption}) const}
+
+a const overload function to the operator \mbox{[}\mbox{]} to find the value of a given key in a \mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+\begin{DoxyParams}{Parameters}
+{\em key} & the key whose associated value to be found \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_a1d22aaed97163f0f352f6d844c48a813}\label{class_b_s_t_a1d22aaed97163f0f352f6d844c48a813}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!performance\_BST@{performance\_BST}}
+\index{performance\_BST@{performance\_BST}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{performance\_BST()}{performance\_BST()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::performance\+\_\+\+B\+ST (\begin{DoxyParamCaption}\item[{vector$<$ key\+\_\+type $>$ \&}]{values }\end{DoxyParamCaption})}
+
+a function to find the perfomance of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} by generating random nodes for the given tree 
+\begin{DoxyParams}{Parameters}
+{\em values} & a vector of random value to be inserted into the \mbox{\hyperlink{class_b_s_t}{B\+ST}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_a6891f10d9512637607be3783bc55ce2f}\label{class_b_s_t_a6891f10d9512637607be3783bc55ce2f}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!printTree@{printTree}}
+\index{printTree@{printTree}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{printTree()}{printTree()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type , typename value\+\_\+type $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::print\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function to print a \mbox{\hyperlink{class_b_s_t}{B\+ST}} node 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_b_s_t_a7785dba8dbfc8ef5e5f8f36bdd19fe58}\label{class_b_s_t_a7785dba8dbfc8ef5e5f8f36bdd19fe58}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+an overload friend function to the operator $<$$<$ to print the given \mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+\begin{DoxyParams}{Parameters}
+{\em out} & a ostream variable \\
+\hline
+{\em b} & \mbox{\hyperlink{class_b_s_t}{B\+ST}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_b_s_t_a4e8687535054becc0b625a3ef89c3bd2}\label{class_b_s_t_a4e8687535054becc0b625a3ef89c3bd2}} 
+\index{BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}!head@{head}}
+\index{head@{head}!BST$<$ key\_type, value\_type $>$@{BST$<$ key\_type, value\_type $>$}}
+\subsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+unique\+\_\+ptr$<$Node$>$ \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::head}
+
+Head of a \mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+B\+S\+T.\+h\item 
+B\+S\+T\+\_\+functions.\+h\item 
+performance.\+cpp\end{DoxyCompactItemize}

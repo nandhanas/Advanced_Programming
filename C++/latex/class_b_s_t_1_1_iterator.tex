@@ -1,0 +1,122 @@
+\hypertarget{class_b_s_t_1_1_iterator}{}\section{B\+ST$<$ key\+\_\+type, value\+\_\+type $>$\+::Iterator Class Reference}
+\label{class_b_s_t_1_1_iterator}\index{BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}}
+
+
+{\ttfamily \#include $<$Iterator.\+h$>$}
+
+Inheritance diagram for B\+ST$<$ key\+\_\+type, value\+\_\+type $>$\+::Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_b_s_t_1_1_iterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_s_t_1_1_iterator_af7bc2cb09f5e0e7c94ec2074c1ac1982}{Iterator}} (Node $\ast$n)
+\item 
+Node $\ast$ \mbox{\hyperlink{class_b_s_t_1_1_iterator_abcfd0f8dcfb0a3c7d2462208e682c7c1}{top}} ()
+\item 
+Node $\ast$ \mbox{\hyperlink{class_b_s_t_1_1_iterator_a51c31d4c55b51c61743eba6010df6209}{value}} ()
+\item 
+\mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \& \mbox{\hyperlink{class_b_s_t_1_1_iterator_a9c8bece64bfbb3f4539cb59a2bc94550}{operator++}} (int)
+\item 
+bool \mbox{\hyperlink{class_b_s_t_1_1_iterator_ae77a4cfb591f0fcce064dc48efe55c31}{operator==}} (const \mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \&n)
+\item 
+bool \mbox{\hyperlink{class_b_s_t_1_1_iterator_a49160c9e2cfa6251c2b4def2787c97f6}{operator!=}} (const \mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \&n)
+\item 
+bool \mbox{\hyperlink{class_b_s_t_1_1_iterator_ad3fd40a6dd0db04db41c372d4ea2856a}{is\+End}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename key\+\_\+type, typename value\+\_\+type$>$\newline
+class B\+S\+T$<$ key\+\_\+type, value\+\_\+type $>$\+::\+Iterator}
+
+Templated \mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} class to iterate through the given \mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+type} & template for a key of the \mbox{\hyperlink{class_b_s_t}{B\+ST}} node \\
+\hline
+{\em value\+\_\+type} & template for a value of the \mbox{\hyperlink{class_b_s_t}{B\+ST}} node \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_s_t_1_1_iterator_af7bc2cb09f5e0e7c94ec2074c1ac1982}\label{class_b_s_t_1_1_iterator_af7bc2cb09f5e0e7c94ec2074c1ac1982}} 
+\index{BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}}
+\subsubsection{\texorpdfstring{Iterator()}{Iterator()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::Iterator\+::\+Iterator (\begin{DoxyParamCaption}\item[{Node $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of the \mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} 
+\begin{DoxyParams}{Parameters}
+{\em n} & the node to be iterated \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_s_t_1_1_iterator_ad3fd40a6dd0db04db41c372d4ea2856a}\label{class_b_s_t_1_1_iterator_ad3fd40a6dd0db04db41c372d4ea2856a}} 
+\index{BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}!isEnd@{isEnd}}
+\index{isEnd@{isEnd}!BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}}
+\subsubsection{\texorpdfstring{isEnd()}{isEnd()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+bool \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::Iterator\+::is\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+a function to check if the stack is empty \mbox{\Hypertarget{class_b_s_t_1_1_iterator_a49160c9e2cfa6251c2b4def2787c97f6}\label{class_b_s_t_1_1_iterator_a49160c9e2cfa6251c2b4def2787c97f6}} 
+\index{BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+bool \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::Iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+an overload function for the operator != to compare iterators 
+\begin{DoxyParams}{Parameters}
+{\em n} & interator ie to be compared \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_1_1_iterator_a9c8bece64bfbb3f4539cb59a2bc94550}\label{class_b_s_t_1_1_iterator_a9c8bece64bfbb3f4539cb59a2bc94550}} 
+\index{BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+\mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}}\& \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::Iterator\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+an overload function for the operator ++ ie post increment 
+\begin{DoxyParams}{Parameters}
+{\em int} & type to do post increment \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_1_1_iterator_ae77a4cfb591f0fcce064dc48efe55c31}\label{class_b_s_t_1_1_iterator_ae77a4cfb591f0fcce064dc48efe55c31}} 
+\index{BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+bool \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::Iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_b_s_t_1_1_iterator}{Iterator}} \&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+an overload function for the operator == to compare iterators 
+\begin{DoxyParams}{Parameters}
+{\em n} & interator ie to be compared \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_s_t_1_1_iterator_abcfd0f8dcfb0a3c7d2462208e682c7c1}\label{class_b_s_t_1_1_iterator_abcfd0f8dcfb0a3c7d2462208e682c7c1}} 
+\index{BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}!top@{top}}
+\index{top@{top}!BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}}
+\subsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+Node$\ast$ \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::Iterator\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+a function to find the top of the stack \mbox{\Hypertarget{class_b_s_t_1_1_iterator_a51c31d4c55b51c61743eba6010df6209}\label{class_b_s_t_1_1_iterator_a51c31d4c55b51c61743eba6010df6209}} 
+\index{BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}!value@{value}}
+\index{value@{value}!BST$<$ key\_type, value\_type $>$::Iterator@{BST$<$ key\_type, value\_type $>$::Iterator}}
+\subsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily template$<$typename key\+\_\+type, typename value\+\_\+type$>$ \\
+Node$\ast$ \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ key\+\_\+type, value\+\_\+type $>$\+::Iterator\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+a function to find the node that is currently being iterated 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Iterator.\+h\end{DoxyCompactItemize}

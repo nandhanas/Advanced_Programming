@@ -1,0 +1,56 @@
+Int BST before balancing
+Time taken for 2000 elements :1494 microseconds
+Time taken for 4000 elements :2057 microseconds
+Time taken for 6000 elements :2586 microseconds
+Time taken for 8000 elements :2425 microseconds
+Time taken for 10000 elements :4114 microseconds
+
+Int BST after balancing
+Time taken for 2000 elements :418 microseconds
+Time taken for 4000 elements :834 microseconds
+Time taken for 6000 elements :1358 microseconds
+Time taken for 8000 elements :1701 microseconds
+Time taken for 10000 elements :2085 microseconds
+
+Double BST before balancing
+Time taken for 2000 elements :555 microseconds
+Time taken for 4000 elements :1200 microseconds
+Time taken for 6000 elements :1945 microseconds
+Time taken for 8000 elements :2571 microseconds
+Time taken for 10000 elements :3285 microseconds
+
+Double BST after balancing
+Time taken for 2000 elements :424 microseconds
+Time taken for 4000 elements :916 microseconds
+Time taken for 6000 elements :1304 microseconds
+Time taken for 8000 elements :1689 microseconds
+Time taken for 10000 elements :2113 microseconds
+
+Int Map
+Time taken for 2000 elements :73 microseconds
+Time taken for 4000 elements :190 microseconds
+Time taken for 6000 elements :348 microseconds
+Time taken for 8000 elements :506 microseconds
+Time taken for 10000 elements :692 microseconds
+
+Int Unordered Map
+Time taken for 2000 elements :34 microseconds
+Time taken for 4000 elements :57 microseconds
+Time taken for 6000 elements :29 microseconds
+Time taken for 8000 elements :44 microseconds
+Time taken for 10000 elements :57 microseconds
+
+Double Map
+Time taken for 2000 elements :112 microseconds
+Time taken for 4000 elements :289 microseconds
+Time taken for 6000 elements :502 microseconds
+Time taken for 8000 elements :736 microseconds
+Time taken for 10000 elements :1152 microseconds
+
+Unordered Double Map
+Time taken for 2000 elements :34 microseconds
+Time taken for 4000 elements :72 microseconds
+Time taken for 6000 elements :98 microseconds
+Time taken for 8000 elements :136 microseconds
+Time taken for 10000 elements :180 microseconds
+
