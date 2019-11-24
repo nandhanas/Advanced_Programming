@@ -1,5 +1,5 @@
 #ignore files
 
 .DS_Store
-/C++/html/*
-/C++/latex/*
+C++/html/*
+C++/latex/*
