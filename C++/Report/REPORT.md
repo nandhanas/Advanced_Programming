@@ -42,7 +42,7 @@ Comparison of lookup time for **Unbalanced BST, Balanced BST, Map and Unordered 
 
 Comparison of lookup time for **Unbalanced BST, Balanced BST, Map and Unordered Map** for data type **Double**
 
-![](BST(Double)vsMap.png)
+![](BST(D)vsMap.png)
 
 From the given **comparison graphs**, we can conclude that the performance are in the following order (from highest to lowest)
 
