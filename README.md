@@ -2,7 +2,7 @@
 
 *By [Nandhana Sakthivel](https://github.com/nandhanas)*
 
-A collective repository for the Advanced Programming course exam as part of DSSC 2018-2019
+A repository for the Advanced Programming course exam as part of DSSC 2018-2019
 
 The Repository has two parts:
 
